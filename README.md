@@ -1,24 +1,13 @@
-# npmtest
+# NPM 发包流程
 
-## Project setup
-```
-yarn install
-```
+## 注册 npm 账号
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+在 [npm 官网](https://www.npmjs.com/) 注册账号
 
-### Compiles and minifies for production
+## 初始化 npm 项目
+
 ```
-yarn build
+npm init
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[这里查看配置说明](https://docs.npmjs.com/files/package.json#description)

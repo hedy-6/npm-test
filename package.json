@@ -1,14 +1,32 @@
 {
-  "name": "npmtest",
-  "version": "0.1.0",
-  "private": true,
+  "name": "hedytest",
+  "version": "0.1.9",
+  "description": "测试",
+  "main": "dist/hedytest.umd.min.js",
+  "keywords": [
+    "test",
+    "npm"
+  ],
+  "author": "hedy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hedy-6/npm-test/issues"
+  },
+  "homepage": "https://github.com/hedy-6/npm-test#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib src/components/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hedy-6/npm-test.git"
   },
   "dependencies": {
+    "ant-design-vue": "^1.6.2",
     "core-js": "^3.6.5",
+    "less-loader": "^6.1.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
