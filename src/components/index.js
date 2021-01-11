@@ -1,18 +1,21 @@
-import Vue from "vue";
 import Test from './Test.vue';
-import Info from './Info.vue'
+import Info from './Info.vue';
 
-const components = [
-  Test,
-  Info
-]
+const components = [Test, Info]
 
-components.map(component => {
-  Vue.component(component.name, component)
-})
+const install = function (Vue) {
+  components.map(component => {
+    Vue.use(component);
+  });
+};
 
-export default components
+/* istanbul ignore if */
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
 
-// Vue.component(Test.name, Test)
+export {
+  Test, Info
+}
 
-// export default Test;
+export default { install }
